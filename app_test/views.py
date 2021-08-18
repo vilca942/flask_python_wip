@@ -11,7 +11,7 @@ def index():
 """
 Ligne pour définir les configs de l'app à partir du fichier config.py situé à la racine du projet
 Make sure you created a 'config.py' file.
-To get one variable, tape app.config['MY_VARIABLE']
+To get one variable --> app.config['MY_VARIABLE']
 """
 app.config.from_object('config')
 
