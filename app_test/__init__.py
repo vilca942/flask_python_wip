@@ -1,3 +1,4 @@
+from flask import Flask
 """
 On importe app dans __init__.py depuis views.py qui est ensuite importée dans main.py
 """

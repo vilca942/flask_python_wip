@@ -1,3 +1,5 @@
+import os
+
 """
 Ce fichier config.py recense toutes les variables globales nécessaires
 à la configuration de l'app.
@@ -14,7 +16,7 @@ SECRET_KEY = "#d#JCqTTW\nilK\\7m\x0bp#\tj~#H"
 FB_APP_ID = 1200420960103822  # à supprimer si inutile
 
 """
-Cette ligne indique à l'ORM SQLAlchemy l'url de la bdd mysql : 
-'mysql://username:password@localhost/db_name'
+Cette ligne indique à l'ORM SQLAlchemy l'url de la bdd app.db : 
 """
-SQLALCHEMY_DATABASE_URI = 'mysql://test_user:mysql@localhost/flask_test_bdd'
+basedir = os.path.abspath(os.path.dirname(__file__))
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
