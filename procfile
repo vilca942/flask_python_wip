@@ -1,2 +1,2 @@
-web: gunicorn app_test:app
+web: gunicorn app_test.wsgi
 init: FLASK_APP=main.py flask init-db
