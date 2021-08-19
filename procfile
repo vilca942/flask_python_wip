@@ -1,0 +1,2 @@
+web: gunicorn app_test:app
+init: FLASK_APP=main.py flask init-db
